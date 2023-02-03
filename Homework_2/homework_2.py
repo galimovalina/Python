@@ -15,7 +15,7 @@
 #         orel += 1
 # if reshka > orel:
 #     print(orel)
-# if orel > reshka:
+# else:
 #     print(reshka)
 
 
@@ -25,8 +25,8 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-# s = int(input())
-# p = int(input())
+# s = int(input("Введите произведение чисел: "))
+# p = int(input("Введите сумму чисел: ))
 #
 # for a in range(1001):
 #     for b in range(1001):
@@ -38,9 +38,6 @@
 
 # n = int(input())
 # k = 1
-# while k <= n:
-#     if (k * 2 > n):
-#         break
-#     else:
-#         k = k * 2
+# while k < n:
 #     print(k)
+#     k = k * 2
