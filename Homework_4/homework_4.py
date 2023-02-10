@@ -5,23 +5,22 @@
 # 3 6 9 12 15 18
 # 6 12 |
 
-n = int(input('Введите кол-во элементов первого множества: '))
-m = int(input('Введите кол-во элементов второго множества: '))
-digits_1 = list()
-digits_2 = list()
-result = set()
-for i in range(n):
-    digits_1.append(int(input('Введите элемент первого множества: ')))
-print(digits_1)
-for j in range(m):
-    digits_2.append(int(input('Введите элемент второго множества: ')))
-print(digits_2)
-for i in range(len(digits_1)):
-    for j in range(len(digits_2)):
-        if digits_1[i] == digits_2[j]:
-            result.add(digits_1[i])
-print(sorted(result))
-
+# n = int(input('Введите кол-во элементов первого множества: '))
+# m = int(input('Введите кол-во элементов второго множества: '))
+# digits_1 = list()
+# digits_2 = list()
+# result = set()
+# for i in range(n):
+#     digits_1.append(int(input('Введите элемент первого множества: ')))
+# print(digits_1)
+# for j in range(m):
+#     digits_2.append(int(input('Введите элемент второго множества: ')))
+# print(digits_2)
+# for i in range(len(digits_1)):
+#     for j in range(len(digits_2)):
+#         if digits_1[i] == digits_2[j]:
+#             result.add(digits_1[i])
+# print(sorted(result))
 
 # В фермерском хозяйстве в Карелии выращивают чернику. Она растет на круглой грядке, причем кусты высажены только по окружности.
 # Таким образом, у каждого куста есть ровно два соседних. Всего на грядке растет N кустов.
@@ -31,3 +30,16 @@ print(sorted(result))
 # Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль, находясь перед некоторым кустом заданной во входном файле грядки.
 # | 4 -> 1 2 3 4
 # 9 |
+
+# n = int(input('Введите кол-во кустов: '))
+# list_1 = list()
+# count = list()
+# for i in range(n):
+#     list_1.append((int(input(f'Введите кол-во ягод на {i + 1} кусте: '))))
+# print(list_1)
+# maximum = 0
+# for i in range(len(list_1)):
+#     count=list_1[i - 1] + list_1[i] + list_1[i - len(list_1)+1]
+#     if count > maximum:
+#         maximum == count
+# print(maximum)
