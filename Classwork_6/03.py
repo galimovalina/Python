@@ -14,4 +14,8 @@ for el in list_1:
         count_dict[el] += 1
     else:
         count_dict[el] = 1
-print(count_dict)
+
+count = 0
+for value in count_dict.values():
+    count += value // 2
+print(count)
